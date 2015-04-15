@@ -156,6 +156,19 @@ if(!isset($_SESSION['logged']) || $_SESSION['logged'] != 'true') {
 
                             </ul>
                         </li>
+                           <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o"></i> 
+                                <span>اضافات</span>
+                                <i class="fa fa-angle-left pull-right"></i> 
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="alerts.php"><i class="fa fa-angle-double-right"></i> منتجات منتهية</a></li>
+                                <li><a href="profit.php"><i class="fa fa-angle-double-right"></i> حساب ارباح </a></li>
+                               
+
+                            </ul>
+                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
