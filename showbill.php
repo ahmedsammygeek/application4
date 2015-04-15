@@ -86,7 +86,7 @@
 									<td class=''>$price</td>
 									<td class=''>$total</td>
 									<td class=''><a href='printbill.php?id=$bill_num'>$bill_num</a></td>
-									<td class=''>$date</td>
+									<td class=''>$time</td>
 									<td class=''><a href='deletebill.php?id=$id'><button class='btn btn-danger btn-sm'>حذف</button></a>
 									</td>
 									</tr>";

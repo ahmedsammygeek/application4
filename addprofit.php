@@ -1,7 +1,6 @@
 <?php 
 $start=$_POST['start'];
-$end=$_POST['end'];
-if (empty($start) || empty($end)) {
+if (empty($start)) {
 	header("location: profit.php?msg=empty_data");die();
 }
 

@@ -39,10 +39,6 @@
 							<label for="exampleInputPassword1">ادخل تاريخ بداية الجرد</label>
 							<input type="date" name="start" class="form-control" id="exampleInputPassword1" >
 						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">ادخل تاريخ النهاية</label>
-							<input type="date" name="end" class="form-control" id="exampleInputPassword1">
-						</div>
 
 					</div><!-- /.box-body -->
 

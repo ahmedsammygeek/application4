@@ -17,7 +17,7 @@
 						$query2=$conn->query("SELECT * FROM clients WHERE id=$client_id");
 						$result2=$query2->fetch(PDO::FETCH_ASSOC);
 						extract($result2);	
-						echo "<h4 class='text-right'> تاريخ الفاتورة : $date " . "<br><br>" . " رقم الفاتورة : $bill_num " . "<br><br>" . "اسم العميل : $client_name" . "<br><br>" . "المبلغ المتبقي : $deserved <h4>" ;
+						echo "<h4 class='text-right'> تاريخ الفاتورة : $time " . "<br><br>" . " رقم الفاتورة : $bill_num " . "<br><br>" . "اسم العميل : $client_name" . "<br><br>" . "المبلغ المتبقي : $deserved <h4>" ;
 						
 					 }
 
