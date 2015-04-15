@@ -1,5 +1,7 @@
 <?php 
 $start=$_POST['start'];
+$end=$_POST['end'];
+
 if (empty($start)) {
 	header("location: profit.php?msg=empty_data");die();
 }
@@ -35,15 +37,19 @@ require 'sidebar.php'; ?>
 									<tbody>
 										
 										<?php require 'connection.php'; 
-										$sql="SELECT * FROM bills WHERE time > $start ";
+										$sql="SELECT * FROM bills WHERE time  BETWEEN '$start' AND '$end' ";
 										$query=$conn->query($sql);
 										$i=1;
+										$total_profit = 0;
 										while ($result=$query->fetch(PDO::FETCH_ASSOC)) {
 											extract($result);
 											$query2=$conn->query("SELECT product_name,original_price FROM products WHERE id=$product_id");
 											$result2=$query2->fetch(PDO::FETCH_ASSOC);
 											extract($result2);
-											$profit1=bcmul(bcsub($price , $original_price), $quantity);
+											$reb7 = bcsub($price , $original_price);
+											$profit1=bcmul($reb7, $quantity);
+
+											$total_profit += $profit1;
 											echo "<tr class='even'>
 											<td>$i</td>
 											<td class='sorting_1'>$product_name</td>
@@ -58,8 +64,13 @@ require 'sidebar.php'; ?>
 										?>
 
 									</tbody>
-
 								</table>
+
+			
+							<?php echo '<blockquote class="pull-right">
+                                        <p>صافى الارباح لهذاة الفترة هيا : '.$total_profit.' جنية</p>
+                                        
+                                    </blockquote>'; ?>
 							</div>
 						</div>
 					</div><!-- /.box-body -->

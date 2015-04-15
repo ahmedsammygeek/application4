@@ -16,7 +16,7 @@
 
 							</div>
 						</div>
-						<table id="example1" class="table table-bordered table-striped dataTable" aria-describedby="example1_info">
+						<table class="table table-bordered table-striped dataTable" aria-describedby="example1_info">
 							<thead>
 								<tr role="row">
 									<th>المسلسل</th>

@@ -40,10 +40,16 @@
 							<input type="date" name="start" class="form-control" id="exampleInputPassword1" >
 						</div>
 
+						<div class="form-group">
+							<label for="exampleInputPassword1">ادخل تاريخ نهاية الجرد</label>
+							<input type="date" name="end" class="form-control" id="exampleInputPassword1" >
+						</div>
+
+
 					</div><!-- /.box-body -->
 
 					<div class="box-footer">
-						<button type="submit" name="submit" class="btn btn-primary">اضف المنتج</button>
+						<button type="submit" name="submit" class="btn btn-primary">احسب</button>
 					</div>
 				</form>
 			</div><!-- /.box -->
