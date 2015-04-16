@@ -1,7 +1,6 @@
 <?php session_start();
 
 
-var_dump($_POST); die();
 
 if(!isset($_SESSION['logged']) || $_SESSION['logged'] != 'true') {
 	header('location: login.php'); die();
